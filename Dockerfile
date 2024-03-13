@@ -9,7 +9,7 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 COPY ./main.py /code/main.py
 COPY ./models.py  /code/models.py
 
-RUN adduser default_user -u 1001
+RUN adduser default_user -u 10001
 
 USER default_user
 
