@@ -9,8 +9,8 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 COPY ./main.py /code/main.py
 COPY ./models.py  /code/models.py
 
-RUN adduser default_user -u 10001
+RUN adduser defaultuser --uid 10016
 
-USER default_user
+USER defaultuser
 
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
