@@ -11,6 +11,6 @@ COPY ./models.py  /code/models.py
 
 RUN adduser defaultuser -u 10016
 
-USER defaultuser
+USER 10016
 
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
