@@ -13,4 +13,4 @@ RUN adduser defaultuser -u 10016
 
 USER 10016
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
